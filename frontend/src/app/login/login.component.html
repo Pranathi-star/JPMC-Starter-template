@@ -1,0 +1,15 @@
+<div class="container w-50 ">
+    <h1 class="display-6 mt-3 text-center m-4">Login </h1>
+    <form #ref="ngForm" (ngSubmit)="onLogin(ref.value)">
+        <div class="mb-3">
+            <label for="username" id='un'>Username</label>
+            <input type="text" name="username" id="un" class="form-control p-0"  ngModel>
+        </div>
+        <div class="mb-3">
+            <label for="password" id='pw'>Password</label>
+            <input type="password" name="password" id="pw" class="form-control p-0"  ngModel>
+        </div>
+        <button class="btn btn-warning d-block mx-auto m-4" type="submit">Login</button>
+    </form>
+</div>
+

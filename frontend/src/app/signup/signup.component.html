@@ -1,0 +1,27 @@
+<div class="container w-50 ">
+    <h1 class="display-6 mt-3 text-center m-4">Sign Up</h1>
+    <form #ref="ngForm" (ngSubmit)="onSignUp(ref.value)" >
+        <div class="mb-3">
+            <label for="fn">Full Name</label>
+            <input type="text" name="name" id="fn" class="form-control p-0"  ngModel>
+        </div>
+        <div class="mb-3">
+            <label for="un">Username</label>
+            <input type="text" name="username" id="un" class="form-control p-0"  ngModel>
+        </div>
+        <div class="mb-3">
+            <label for="pw">Password</label>
+            <input type="password" name="password" id="pw" class="form-control p-0" ngModel>
+        </div>
+        <div class="mb-3">
+            <label for="pn">Contact</label>
+            <input type="tel" name="phone_number" id="pn" class="form-control " placeholder="" ngModel>
+        </div>
+        <div class="mb-3">
+            <label for="em">Email</label>
+            <input type="email" name="email" id="em" class="form-control " placeholder="test@example.com" ngModel>
+        </div>
+        <button class="btn btn-warning d-block mx-auto m-4" type="submit">Register</button>
+    </form>
+</div>
+
